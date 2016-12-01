@@ -1,1 +1,4 @@
 node_modules
+rev-manifest.json
+public/css
+public/js
