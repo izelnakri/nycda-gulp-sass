@@ -1,6 +1,6 @@
 const gulp = require('gulp'),
+      nodemon = require('gulp-nodemon'),
       sass = require('gulp-sass'),
-      runSequence = require('run-sequence').use(gulp),
       sourcemaps = require('gulp-sourcemaps'),
       rev = require('gulp-rev'),
       revDel = require('rev-del'),
@@ -54,4 +54,5 @@ gulp.task('scss', () => {
 gulp.task('default', ['js', 'scss'], () => {
   gulp.watch('frontend/scss/**/*.scss', ['scss']);
   gulp.watch('frontend/js/**/*.js', ['js']);
+  nodemon({ script: 'index.js' });
 });

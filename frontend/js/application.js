@@ -3,4 +3,3 @@ var result = _.map([1, 2, 3, 4, 5], (x) => {
 });
 
 console.log(result);
-console.log('ok');
